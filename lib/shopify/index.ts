@@ -227,7 +227,7 @@ export async function getCollectionProducts(params: {
 
 export async function getCart(): Promise<Cart | null> {
   try {
-    const { getCart: getCartAction } = await import('@/components/cart/actions');
+    const { getCart: getCartAction } = await import('@/components/cart/cart-client-actions');
     return await getCartAction();
   } catch (error) {
     console.error('Error fetching cart:', error);

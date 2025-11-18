@@ -2,7 +2,7 @@
 // If deploying to a project page (username.github.io/repository-name), set basePath
 // If deploying to user/organization page (username.github.io), leave basePath empty
 const isGithubPages = process.env.GITHUB_PAGES === 'true';
-const repositoryName = process.env.GITHUB_REPOSITORY?.split('/')[1];
+const repositoryName = process.env.GITHUB_REPOSITORY?.split('/')[1] || 'shopify';
 const isProjectPage = isGithubPages && repositoryName && !repositoryName.includes('.github.io');
 
 const nextConfig = {
