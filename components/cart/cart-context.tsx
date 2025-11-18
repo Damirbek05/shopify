@@ -11,7 +11,7 @@ import React, {
   useState,
   useTransition,
 } from 'react';
-import * as CartActions from '@/components/cart/actions';
+import * as CartActions from '@/components/cart/cart-client-actions';
 
 export type UpdateType = 'plus' | 'minus' | 'delete';
 
